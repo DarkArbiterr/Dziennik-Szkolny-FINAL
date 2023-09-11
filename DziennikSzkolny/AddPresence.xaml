@@ -1,0 +1,109 @@
+﻿<Page x:Class="DziennikSzkolny.AddPresence"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DziennikSzkolny"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="940"
+      Title="dodaj_nieobecnosci">
+
+    <Grid Background="White">
+        <Grid Height="560" Width="400" HorizontalAlignment="Left" Margin="70">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="500"/>
+                <RowDefinition Height="30"/>
+
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0"  Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Row="1"  Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Row="2" Height="100" VerticalAlignment="Top">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#2a2a2a"/>
+                        <GradientStop Color="#000000" Offset="1"/>
+                        <GradientStop Color="#1f1f1f" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="Zaznacz Nieobecnych" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Row="1" >
+                <ListBox x:Name="uczniowie" ItemsSource="{Binding StudentList}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding Check}" Content="{Binding Text}" Checked="CheckBox_Checked"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            <Button Grid.Row="2" Background="Black" BorderBrush="Black" Click="Button_Click" Foreground="#DDFFFFFF">
+                <TextBlock Text="ZATWIERDŹ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" Height="33" Foreground="White" FontFamily="Impact" FontWeight="Normal"></TextBlock>
+            </Button>
+        </Grid>
+        <Grid Height="300" Width="350" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="70">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Row="0"  Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Row="1"  Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Row="2"  Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Row="3"  Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Row="4"  Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Row="5"  Fill="#EEEEEEEE" Stroke="Black"/>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="Wybierz Klasę" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <ComboBox  Name="klasy" SelectionChanged="klasy_SelectionChanged" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <TextBlock Text="Data" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" />
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <ComboBox  Name="daty" SelectionChanged="daty_SelectionChanged" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22"/>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <TextBlock Text="Godzina" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+            </Grid>
+
+            <Grid Grid.Row="5">
+                <ComboBox  Name="godziny" SelectionChanged="godziny_SelectionChanged" Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22"/>
+            </Grid>
+
+
+        </Grid>
+
+        <Grid Margin="520,561,70,70">
+            <Rectangle Height="100" VerticalAlignment="Top">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#2a2a2a"/>
+                        <GradientStop Color="#000000" Offset="1"/>
+                        <GradientStop Color="#1f1f1f" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Button Background="{x:Null}" BorderBrush="{x:Null}" Height="Auto" Click="Button_Click_1">
+                <TextBlock Text="USPRAWIEDLIWIANIE" Foreground="White" FontSize="24" FontFamily="Impact" FontWeight="Normal"></TextBlock>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+</Page>

@@ -1,0 +1,116 @@
+﻿<Page x:Class="DziennikSzkolny.Marks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DziennikSzkolny"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="940"
+      Title="oceny">
+
+    <Grid Width="940" Height="700" Background="White">
+        <Grid Height="560" Width="800">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230"/>
+                <ColumnDefinition Width="570"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+                <RowDefinition Height="32.9"/>
+            </Grid.RowDefinitions>
+            <Rectangle Grid.Column="0" Grid.Row="0" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="1" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="2" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="3" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="4" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="5" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="6" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="7" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="8" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="9" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="10" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="11" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="12" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="13" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="14" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="15" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="16" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="0" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="1" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="2" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="3" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="4" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="5" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="6" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="7" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="8" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="9" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="10" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="11" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="12" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="13" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="14" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="15" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="16" Fill="#EEEEEEEE" Stroke="Black"/>
+
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Matematyka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="2" Text="Język Polski" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="3" Text="Język Angielski" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="4" Text="Język Niemiecki" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="5" Text="Biologia" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="6" Text="Chemia" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="7" Text="Fizyka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="8" Text="Religia" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="9" Text="Plastyka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="10" Text="Muzyka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="11" Text="Wychowanie Fizyczne" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="12" Text="Historia" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="13" Text="Informatyka" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="14" Text="Technika" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="15" Text="Wiedza o Społeczeństwie" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="16" Text="Geografia" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold"></TextBlock>
+
+            <StackPanel x:Name="mt" Grid.Column="1" Grid.Row="1" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="jp" Grid.Column="1" Grid.Row="2" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="ja" Grid.Column="1" Grid.Row="3" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="jn" Grid.Column="1" Grid.Row="4" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="bl" Grid.Column="1" Grid.Row="5" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="ch" Grid.Column="1" Grid.Row="6" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="fz" Grid.Column="1" Grid.Row="7" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="rl" Grid.Column="1" Grid.Row="8" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="pl" Grid.Column="1" Grid.Row="9" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="mz" Grid.Column="1" Grid.Row="10" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="wf" Grid.Column="1" Grid.Row="11" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="hs" Grid.Column="1" Grid.Row="12" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="im" Grid.Column="1" Grid.Row="13" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="tc" Grid.Column="1" Grid.Row="14" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="ws" Grid.Column="1" Grid.Row="15" Orientation="Horizontal"></StackPanel>
+            <StackPanel x:Name="gf" Grid.Column="1" Grid.Row="16" Orientation="Horizontal"></StackPanel>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="PRZEDMIOT" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24" FontFamily="Impact"/>
+            </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <TextBlock Text="OCENY" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="24" FontFamily="Impact"/>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</Page>

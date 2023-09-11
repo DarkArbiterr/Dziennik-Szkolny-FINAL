@@ -1,0 +1,49 @@
+﻿<Page x:Class="DziennikSzkolny.Justify"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DziennikSzkolny"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="940"
+      Title="usprawiedliwianie">
+
+    <Grid Background="White">
+        <Grid Height="560" Width="800">
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="500"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Column="0" Grid.Row="0" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="1" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="2" Fill="Black" Stroke="Black"/>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="Nieobecności" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22" Foreground="Black" Height="29" Margin="320,1,276,0" FontWeight="Bold" Width="204"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="467*"/>
+                    <ColumnDefinition Width="333*"/>
+                </Grid.ColumnDefinitions>
+                <ListBox x:Name="nieob" ItemsSource="{Binding PresenceList}" Grid.ColumnSpan="2">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding Check}" Content="{Binding Text}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button BorderBrush="Black" Foreground="#DDFFFFFF" Background="Black" Click="Button_Click">
+                    <TextBlock Text="USPRAWIEDLIW" FontSize="24" Height="33" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Impact" FontWeight="Normal"></TextBlock>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

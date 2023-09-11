@@ -1,0 +1,35 @@
+﻿<Page x:Class="DziennikSzkolny.Presence"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DziennikSzkolny"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="940"
+      Title="nieobecnosci">
+
+    <Grid Width="940" Height="700" Background="White">
+        <Grid Height="560" Width="800">
+            <Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="530"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.Column="0" Grid.Row="0" Fill="#FFD13333" Stroke="Black"/>
+            <Rectangle Grid.Column="1" Grid.Row="1" Fill="#EEEEEEEE" Stroke="Black"/>
+            <Rectangle Grid.Column="0" Grid.Row="1" Stroke="Black"/>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="NIEOBECNOŚCI" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontFamily="Impact" Foreground="White" Height="30" Margin="331,0"/>
+            </Grid>
+
+            <ScrollViewer  Grid.Column="0" Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="pres" Grid.Column="0" Grid.Row="1" Width="800" Orientation="Vertical">
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>
